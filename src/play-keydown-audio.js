@@ -15,6 +15,3 @@ var upperKeyDowns = keyDowns
 upperKeyDowns.subscribe(e => console.log(e));
 
 upperKeyDowns.subscribe(e => document.getElementById(e).play());
-
-
-//<audio id="A" src="sounds/A.mp3" preload="auto"></audio>

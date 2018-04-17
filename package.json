@@ -14,7 +14,7 @@
   },
   "scripts": {
     "start": "electron .",
-    "compile" : "babel reactjs.js --out-file reactjs-compiled.js"
+    "compile" : "babel src --out-dir dist"
   },
   "repository": "https://github.com/bran2k7/hear-me-type-tutorial",
   "keywords": [
