@@ -3,10 +3,20 @@
   "version": "1.0.0",
   "description": "Play a sound for every keyboard key that you press",
   "main": "main.js",
-  "scripts": {
-    "start": "electron ."
+  "babel": {
+    "presets": [
+      ["env", {
+        "targets": {
+          "node": "current"
+        }
+      }]
+    ]
   },
-  "repository": "https://github.com/electron/electron-quick-start",
+  "scripts": {
+    "start": "electron .",
+    "compile" : "babel reactjs.js --out-file reactjs-compiled.js"
+  },
+  "repository": "https://github.com/bran2k7/hear-me-type-tutorial",
   "keywords": [
     "Electron",
     "quick",
@@ -18,9 +28,11 @@
   "license": "CC0-1.0",
   "dependencies": {
     "npm": "^5.8.0",
-    "rxjs": "^6.0.0-beta.4"
+    "rxjs": "^5.5.10"
   },
   "devDependencies": {
-    "electron": "^1.8.4"
+    "electron": "^1.8.4",
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1"
   }
 }
