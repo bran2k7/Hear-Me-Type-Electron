@@ -11,6 +11,12 @@
     Chromium <script>document.write(process.versions.chrome)</script>,
     and Electron <script>document.write(process.versions.electron)</script>.\
 
+    <form autocomplete="on">
+      <input type="search" id="item-name" autofocus>
+      <input type="button" onclick="" value="Search" id="submit">
+      <input type="reset" value="Clear">
+    </form>
+
     <div class="audio">
       <audio id="A" src="sounds/A.mp3" preload="auto"></audio>
       <audio id="B" src="sounds/B.mp3" preload="auto"></audio>
@@ -54,6 +60,7 @@
       // You can also require other files to run in this process
       require('./renderer.js')
       require('./dist/play-keydown-audio.js')
+      require('./dist/needname.js')
     </script>
   </body>
 </html>
