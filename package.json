@@ -5,7 +5,16 @@
   "main": "main.js",
   "babel": {
     "presets": [
-      ["@babel/preset-env", {"targets": {"browsers": ["Chrome >= 59"]}}]
+      [
+        "@babel/preset-env",
+        {
+          "targets": {
+            "browsers": [
+              "Chrome >= 59"
+            ]
+          }
+        }
+      ]
     ],
     "plugins": [
       "@babel/plugin-proposal-pipeline-operator"
